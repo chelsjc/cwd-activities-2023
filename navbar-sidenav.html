@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3c399f8611.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <!-- Navigation Trigger Button -->
+    <div class="navbar-fixed">
+    <nav class="#f9a825 yellow darken-3">
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" ><i class="fa-solid fa-bars"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class><a href="https://materializecss.com/" target="_blank">Materialize</a></li>
+                <li><a href="https://materializecss.com/sidenav.html" target="_blank">Side Nav</a></li>
+                <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+                <li>
+                    <a href="" class="dropdown-trigger" data-target="dropdown1"><i class="fa-solid fa-caret-down"></i></a>
+                </li>
+              </ul>
+        </div>
+    </nav>
+    </div>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="#!" class="black-text">Sign up</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#!" class="black-text">Login</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#!" class="black-text">Help</a>
+        </li>
+      </ul>
+    
+    <!-- Side Nav -->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/img6.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="images/chels.jpg"></a>
+                <a href="#name"><span class="white-text name">Chelsea Jorielle Cuevas</span></a>
+                <a href="#email"><span class="white-text email">cuevas.chelsea2223@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+        <li><a href="https://mail.google.com/" target="_blank"><i class="fa-brands fa-google"></i>Google</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="https://www.viber.com/en/" target="_blank"><i class="fa-solid fa-phone"></i>Viber</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Course</a></li>
+        <li><a class="waves-effect" href="#!">Creative Web Design</a></li>
+    </ul>
+    
+
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <h3 class="center red-text text-lighten-2">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a 
+        <code class="language-markup">right</code>
+        class to your 
+        <code class="language-markup">&lt;ul&gt;</code>
+        that contains them.
+
+        <nav class="blue darken-3">
+            <div class="container">
+            <div class="nav-wrapper">
+              <a href="https://www.facebook.com/" class="brand-logo" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/watch/?ref=tab" target="_blank">Videos</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/marketplace/?ref=app_tab" target="_blank">Marketplace</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/feed/" target="_blank">Groups</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/gaming/play/?store_visit_source=gaming_tab" target="_blank">Gaming</a>
+                </li>
+                
+              </ul>
+              </div>
+            </div>
+        </nav>
+        <br>
+        <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a 
+        <code class="language-markup">left</code>
+        class to your 
+        <code class="language-markup">&lt;ul&gt;</code>
+        that contains them.</p>
+        <nav class="pink">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://www.instagram.com/" class="brand-logo right" target="_blank">
+                        <i class="fa-brands fa-instagram white-text right"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-small-only">
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/explore/" target="_blank">Explore</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/reels/CuFFrBfr7g2/" target="_blank">Reels</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/direct/inbox/" target="_blank">Messages</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">Notifications</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">Profile</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+
+          <br>
+          <h3 class="red-text text-lighten-2">Centering the Logo</h3>
+          <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the 
+            <code class="language-markup">center</code> 
+            class to your <br>
+            <code class="language-markup">&lt;a class="brand-logo"&gt;</code>
+            . You will have to make sure yourself that links do not overlap if you use this.</p>
+            <nav class="purple darken-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="https://www.viber.com/en/" class="brand-logo center" target="_blank">
+                            <i class="fa-brands fa-viber"></i>
+                        </a>
+                        <ul id="nav-mobile" class="left hide-on-small-only">
+                            <li>
+                                <a href="https://www.viber.com/en/download/" target="_blank">Download</a>
+                            </li>
+                            <li>
+                                <a href="https://www.viber.com/en/features/" target="_blank">Features</a>
+                            </li>
+                            <li>
+                                <a href="https://www.viber.com/en/communities/" target="_blank">Communities</a>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+              </nav>
+
+              <br>
+              <h3 class="red-text text-lighten-2">Active Items</h3>
+              <p>Add active class to your li tags to denote the current page.</p>
+
+              <nav class="grey darken-2">
+                <div class="container">
+                <div class="nav-wrapper">
+                  <a href="https://www.tiktok.com/" class="brand-logo" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="https://www.tiktok.com/en/" target="_blank">For You</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/following" target="_blank">Following</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/explore" target="_blank">Explore</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/live" target="_blank">Live</a>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+            </nav>
+
+            <br>
+            <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+            <p>To add extended components to the navbar, add the class 
+                <code class="language-markup">nav-extended</code>
+                 to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+                 <!-- Nav Bar Extended -->
+                 <nav class="red darken-1 nav-extended">
+                    <div class="container">
+                    <div class="nav-wrapper">
+                      <a href="https://www.pinterest.ph/" class="brand-logo" target="_blank">
+                        <i class="fa-brands fa-pinterest"></i>
+                      </a>
+                      <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class>
+                            <a href="https://help.pinterest.com/en/guide/all-about-pinterest" target="_blank">About</a>
+                        </li>
+                        <li>
+                            <a href="https://business.pinterest.com/en-in/" target="_blank">Business</a>
+                        </li>
+                        <li>
+                            <a href="https://newsroom.pinterest.com/en" target="_blank">Blog</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown2"><i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                      </ul>
+                      </div>
+                      <ul id="dropdown2" class="dropdown-content">
+                        <li>
+                            <a href="#!" class="black-text">Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!" class="black-text">Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#!" class="black-text">Log out</a>
+                        </li>
+                      </ul>
+                      <div class="nav-content">
+                            <ul class="tabs tabs-transparent">
+                                <li class="tab"><a href="#aesthetic">Aesthetic</a></li>
+                                <li class="tab"><a href="#minimalist">Minimalist</a></li>
+                                <li class="tab"><a href="#retro">Retro</a></li>
+                                <li class="tab"><a href="#pastel">Pastel</a></li>
+                            </ul>
+                      </div>
+                    </div>
+                </nav>
+
+
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="https://www.pinterest.ph/add-account" target="_blank">Add Acount</a></li>
+                    <li><a href="https://www.pinterest.com/settings/" target="_blank">Settings</a></li>
+                    <li><a href="https://policy.pinterest.com/en/terms-of-service" target="_blank">Terms of Service</a></li>
+                  </ul>
+                  
+                <!-- Tabs structure -->
+                <div class="row">
+                    <!-- Aesthetic Slider Card -->
+                    <div class="col s12" id="aesthetic">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="slider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img class="responsive-img" src="images/img7.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img8.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img9.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img10.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Minimalist Slider Card -->
+                    <div class="col s12" id="minimalist">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="slider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img class="responsive-img" src="images/img11.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img12.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img13.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img14.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Retro Slider Card -->
+                    <div class="col s12" id="retro">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="slider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img class="responsive-img" src="images/img15.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img16.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img17.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img18.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pastel Slider Card -->
+                    <div class="col s12" id="pastel">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="slider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img class="responsive-img" src="images/img19.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img20.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img21.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img class="responsive-img" src="images/img22.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+    <div style="height: 1000px;"></div>
+
+
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        //tab init
+        $('.tabs').tabs();
+        //sidenav init
+        $('.sidenav').sidenav();
+        //dropdown init
+        $(".dropdown-trigger").dropdown();
+         });
+         //slider init
+        $('.slider').slider({
+         height: 450
+        });
+    </script>
+</body>
+</html>

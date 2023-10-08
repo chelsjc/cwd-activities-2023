@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3c399f8611.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Modals</title>
+</head>
+<body style="background-color: black;">
+    <h1 class="center green-text" style="font-weight: bold;">Music</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <h4 style="font-weight: bold; color: white;">Albums</h4>
+        <!-- Image card as the modal trigger -->
+        <div class="row">
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img25.png" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal1"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO03DwPK?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Image Card -->
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img27.jpg" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal2"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal2" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5AEDGbliTTfjOB8TSm1sxt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img28.jpg" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal3"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal3" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2HN2Q7F5J04zs9sy4qZ0T1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 style="font-weight: bold; color: white;">Editor's Picks</h4>
+        <!-- Image card as the modal trigger -->
+        <div class="row">
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img29.jpg" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal4"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal4" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcZQSjptOQtk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Image Card -->
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img30.jpg" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal5"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal5" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4FcAKI5Nhzq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s11 m6 l4">
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light black center-align valign-wrapper">
+                            <img src="images/img31.jpg" alt="" class="responsive-img" >
+                            <a class="floating-button modal-trigger" href="#modal6"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                </div>
+                <div class="card-content center-align">
+                    <!-- Modal Structure -->
+                    <div id="modal6" class="modal">
+                        <div class="modal-content grey darken-4">
+                            <h4 class="embed-playlist white-text left">Embed Playlist</h4>
+                            <br><br>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWU0rV6Im72pA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <br><br>
+                            <p class="grey-text">By embedding a Spotify player on your site, you are agreeing to <a href="https://developer.spotify.com/terms" class="white-text" target="_blank">Spotify's Developer Terms</a> and <a href="https://support.spotify.com/ph-en/article/platform-rules/" class="white-text" target="_blank">Spotify Platform Rules</a>.</p>
+                        </div>
+                        <div class="modal-footer grey darken-4">
+                            <div class="button-container">
+                                <label>
+                                    <input type="checkbox" id="show-code">
+                                    <span>Show Code</span>
+                                </label>
+                                    <a href="#!" class="waves-effect green btn-flat black-text" id="copy-button">COPY</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+        $('.floating-button').css({
+            'position': 'absolute',
+            'bottom': '10px',
+            'right': '15px',
+            'border-radius': '50%',
+            'background-color': 'green',
+            'padding': '18px',
+            'color': 'black',
+            'cursor': 'pointer'
+        });
+
+        $('.card-image').on('mouseover', function () {
+        $(this).find('.floating-button').show();
+        });
+
+        $('.card-image').on('mouseout', function () {
+            $(this).find('.floating-button').hide();
+        });
+    </script>
+</body>
+</html>
